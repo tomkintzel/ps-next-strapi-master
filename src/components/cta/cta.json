@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_cta_ctas",
+  "info": {
+    "displayName": "CTA"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "string"
+    },
+    "ButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "ButtonLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

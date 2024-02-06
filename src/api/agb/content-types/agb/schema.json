@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "agbs",
+  "info": {
+    "singularName": "agb",
+    "pluralName": "agbs",
+    "displayName": "agb"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

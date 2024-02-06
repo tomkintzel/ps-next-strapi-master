@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "articles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "imageheader": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Datum": {
+      "type": "date",
+      "required": true
+    },
+    "quelle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quelle.quelle"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "articles"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "news",
+        "guide"
+      ],
+      "required": true
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cta.cta"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

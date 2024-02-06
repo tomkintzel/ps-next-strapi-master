@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "stars": {
+      "default": 4,
+      "max": 5,
+      "required": true,
+      "type": "integer",
+      "min": 4
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "default": "2023-01-01"
+    },
+    "review": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

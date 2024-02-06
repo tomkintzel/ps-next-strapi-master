@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Beschreibung": {
+      "type": "richtext",
+      "required": true
+    },
+    "headerimage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "kategorie": {
+      "type": "enumeration",
+      "enum": [
+        "Speicher",
+        "Module",
+        "Wechselrichter",
+        "Wallbox",
+        "Unterkonstruktion",
+        "Zubehoer",
+        "Optimierer",
+        "Hauskraftwerk",
+        "Waermepumpen"
+      ],
+      "required": true
+    },
+    "hersteller": {
+      "type": "string",
+      "required": true
+    },
+    "detailfoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "jobs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Jobtitel": {
+      "type": "string",
+      "required": true
+    },
+    "Stellenbeschreibung": {
+      "type": "richtext"
+    },
+    "imageHeader": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "Management",
+        "Elektroinstallation",
+        "Montage",
+        "Verwaltung",
+        "People",
+        "Projektabwicklung",
+        "Logistik",
+        "Planung",
+        "Einkauf",
+        "Legal",
+        "Sales",
+        "Finance",
+        "IT",
+        "Marketing"
+      ]
+    },
+    "einstellungsart": {
+      "type": "enumeration",
+      "enum": [
+        "Vollzeit",
+        "Teilzeit",
+        "Minijob",
+        "Praktikum",
+        "Werkstudent"
+      ]
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "Lichtenau",
+        "Paderborn",
+        "Hannover"
+      ]
+    }
+  }
+}

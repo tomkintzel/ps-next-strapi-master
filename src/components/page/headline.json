@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_page_headlines",
+  "info": {
+    "displayName": "Headline"
+  },
+  "options": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "subline": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_quelle_quelles",
+  "info": {
+    "displayName": "quelle",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "linkname": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "linkurl": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    }
+  }
+}

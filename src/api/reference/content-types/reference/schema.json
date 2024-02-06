@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "references",
+  "info": {
+    "singularName": "reference",
+    "pluralName": "references",
+    "displayName": "reference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "pvinfo": {
+      "type": "string",
+      "required": false
+    },
+    "speicherinfo": {
+      "type": "string",
+      "required": false
+    },
+    "wallboxinfo": {
+      "type": "string",
+      "required": false
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "Datum": {
+      "type": "date",
+      "required": true
+    },
+    "co2ersparnisprojahr": {
+      "type": "string"
+    },
+    "autarkie": {
+      "type": "string"
+    },
+    "standort": {
+      "type": "string"
+    },
+    "imageheader": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "pvanlage",
+        "speicher",
+        "wallboxen",
+        "gewerbe"
+      ]
+    },
+    "aussergewoehnliches": {
+      "type": "boolean"
+    },
+    "wechselrichterinfo": {
+      "type": "string"
+    },
+    "monitoringinfo": {
+      "type": "string"
+    }
+  }
+}
