@@ -17,8 +17,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: negprof
-          password: ${{ secrets.CR_PAT }}
+          username: tomkintzel
+          password: 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
       - name: Build and Push Docker Image
         run: |
           export CURRENT_BRANCH=${GITHUB_REF#refs/heads/}
